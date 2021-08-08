@@ -143,6 +143,48 @@
             color: green;
         }
         
+        .colorful {
+            position: relative;
+            height: 42.38px;
+            margin-top: 7px;
+            width: 100%;
+            background-color: #fff;
+        }
+        
+        .colorful .color {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            height: 25px;
+            width: 93%;
+            background-color: #19A33D;
+            animation: color 3s steps(1) 2s infinite normal;
+        }
+        
+        @keyframes color {
+            14.28% {
+                background-color: #943C97;
+            }
+            28.57% {
+                background-color: #F96F1C;
+            }
+            42.85% {
+                background-color: #333BC2;
+            }
+            57.14% {
+                background-color: #E7181F;
+            }
+            71.42% {
+                background-color: #FDF100;
+            }
+            85.71% {
+                background-color: #0094E1;
+            }
+            100% {
+                background-color: #19A33D;
+            }
+        }
         .gengduo {
             position: fixed;
             bottom: 0;
@@ -191,6 +233,9 @@
     <div class="mingzi">巴荒</div>
     <div class="xueyuan">学院</div>
     <div class="jingguan">经济管理学院</div>
+    <div class="colorful">
+        <div class="color"></div>
+    </div>
     <div class="zhuangtaima">状态码</div>
     <div class="erweima">
         <!-- 绿码 -->
